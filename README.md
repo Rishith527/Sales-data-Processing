@@ -1,6 +1,5 @@
 # Sales-data-Processing
 
-# Sales Data Projection Project
 
 This project simulates a real-time sales data pipeline using AWS services such as Lambda, DynamoDB, Kinesis, S3, Glue, and Athena. The project demonstrates an event-driven architecture for generating, transforming, and analyzing sales data.
 
@@ -31,7 +30,7 @@ The architecture follows an event-driven pipeline:
 ## How to Deploy
 
 1. Step 1: Clone this repository
-   git clone https://github.com/yourusername/sales-data-projection.git
+   git clone https://github.com/Rishith527/Sales-data-Processing/
    cd sales-data-projection
 
 Step 2: Set up AWS resources (Lambda, DynamoDB, EventBridge, etc.) using the AWS Console or Infrastructure-as-Code (IaC) such as CloudFormation or Terraform.
