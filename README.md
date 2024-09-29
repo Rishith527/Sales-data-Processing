@@ -46,5 +46,7 @@ Step 6: Query the data in Athena.
 ## Usage
 
 Generate Mock Data: The generate_mock_data.py Lambda function simulates sales orders and inserts them into DynamoDB.
+
 Data Processing: Kinesis Firehose batches and processes this data using the transform_data.py Lambda.
+
 Data Analysis: Use Athena to query the processed data stored in S3.
