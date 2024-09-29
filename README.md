@@ -1,4 +1,4 @@
-# Sales-data-Processing
+# Sales-Data-Processing
 
 
 This project simulates a real-time sales data pipeline using AWS services such as Lambda, DynamoDB, Kinesis, S3, Glue, and Athena. The project demonstrates an event-driven architecture for generating, transforming, and analyzing sales data.
@@ -9,13 +9,15 @@ This project simulates a real-time sales data pipeline using AWS services such a
 - Architecture
 - How to Deploy
 - Usage
-- Future Enhancements
+
 
 ## Project Overview
 
 This project generates mock sales data using AWS Lambda, stores the data in DynamoDB, and processes the data in real time using DynamoDB Streams and EventBridge. Kinesis Firehose is used to batch and transform the data before storing it in S3. Finally, an AWS Glue Crawler is run to create a schema for querying the data in Amazon Athena.
 
 ## Architecture
+
+![Architecture](https://github.com/user-attachments/assets/9e76a48d-e0db-4945-ac1d-09ee7b348ca3)
 
 The architecture follows an event-driven pipeline:
 1. Lambda: Generates mock sales data and sends it to DynamoDB.
@@ -29,8 +31,8 @@ The architecture follows an event-driven pipeline:
 
 ## How to Deploy
 
-1. Step 1: Clone this repository
-   git clone https://github.com/Rishith527/Sales-data-Processing/
+1. Step 1: Clone this repository https://github.com/Rishith527/Sales-Data-Projection
+   
    cd sales-data-projection
 
 Step 2: Set up AWS resources (Lambda, DynamoDB, EventBridge, etc.) using the AWS Console or Infrastructure-as-Code (IaC) such as CloudFormation or Terraform.
@@ -50,3 +52,5 @@ Generate Mock Data: The generate_mock_data.py Lambda function simulates sales or
 Data Processing: Kinesis Firehose batches and processes this data using the transform_data.py Lambda.
 
 Data Analysis: Use Athena to query the processed data stored in S3.
+
+
